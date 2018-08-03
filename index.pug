@@ -1,0 +1,248 @@
+extends layout
+
+block content
+  body
+    include navigation
+    section.hero.is-dark.is-large.main-bg#particles-js
+      .hero-body
+        .container.has-text-centered(style='z-index: 1;')
+          h1.title(style='text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;') Invest your brewpubs over blockchain
+          h2.subtitle(style='text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;') Email: hello@0x.beer
+
+        .hero-buttons
+          a.button.is-link.is-medium(href='http://ec2.amazonaws.com/assets/bit.pdf', target='_blank', style='z-index: 1;')
+            span.icon
+              i.fas.fa-book
+            span
+              | Read the&nbsp;
+              strong whitepaper
+          a.button.is-black.is-medium(href='https://github.com/0xbeer', target='_blank', style='z-index: 1;')
+            span.icon
+              i.fab.fa-github
+            span Contribute
+
+    section.hero.is-medium
+      .hero-body
+        .container
+          .columns
+            .column.is-offset-2.is-8
+              h1.title.has-text-centered Decentralized brewpubs over blockchain
+              h2.subtitle(style='margin-top: 2.5em;')
+                | The vision of ZXB is to operate a series of brewpubs over blockchain in some major cities around the globe.
+                | It will bring new elements and dynamics into the traditional context, create new experiences and
+                | transform the ways people invest, collaborate, socialize, consume and entertain by
+                | convenient asset holding, secure transacting, efficient product distributing
+                | and high yielding.
+              .field.is-grouped.is-grouped-multiline(style='margin-top: 2.5em;')
+                .control
+                  .tags.has-addons
+                    span.tag Blockchain Know-how
+                    .tag.is-secondary Expert
+                .control
+                  .tags.has-addons
+                    span.tag Software Development
+                    .tag.is-secondary Strong
+                .control
+                  .tags.has-addons
+                    span.tag Industry Expertise
+                    .tag.is-secondary Strong
+                .control
+                  .tags.has-addons
+                    span.tag Local Connections
+                    .tag.is-secondary Strong
+
+    section.hero.technology
+      .hero-body
+        .container
+          nav.columns
+            .column.has-text-centered
+              figure.image.is-96x96
+                img(src='zxb.png')
+              p.title.is-4(style='margin-top: 0.5em;')
+                strong ZXB
+            .column.has-text-centered
+              figure.image.is-96x96
+                img(src='brc.png')
+              p.title.is-4(style='margin-top: 0.5em;')
+                strong BRC
+
+    section.section#feature
+      .container
+        .columns.is-multiline
+          .card.column.is-4
+            .card-content
+              .content
+                h5 ZXB token
+                p
+                  | ZXB token is ERC20 compliant. It will be traded on exchanges and be used to vote on important business
+                  | decisions, calculate product reward and obtain available services.
+          .card.column.is-4
+            .card-content
+              .content
+                h5 Product Reward
+                p
+                  | Participants will receive product reward over Beercoin blockchain. Beercoin (BRC) is pegged to ZXB final product
+                  | and is traded on the ZXB Market.
+          .card.column.is-4
+            .card-content
+              .content
+                h5 Liquidity
+                p
+                  | ZXB and BRC will be bought and sold respectively on exchanges and the ZXB Market. Participants will benefit from
+                  | potential token appreciation and reward. ZXB wallet displays the balances of ZXB and BRC participants hold.
+          .card.column.is-4
+            .card-content
+              .content
+                h5 Expertise Leverage
+                p
+                  | The community fosters interaction and collaboration. Participants can utilize ZXB expertise and network
+                  | for their own projects by BRC. ZXB will help you hold events and promote your business.
+          .card.column.is-4
+            .card-content
+              .content
+                h5 Community Participation
+                p
+                  | ZXB will create different experiences to patrons. ZXB will also offer BRC to outside contributors. There is no transaction fee for BRC.
+          .card.column.is-4
+            .card-content
+              .content
+                h5 Information &amp; Culture Hub
+                p
+                  | ZXB operations use BRC as the incentive for all activities in the community.
+
+    section.section
+      .container
+        .timeline.is-centered
+          header.timeline-header
+            span.tag.is-medium.is-primary Start
+          .timeline-item.is-primary
+            .timeline-marker.is-primary
+            .timeline-content
+              p.heading Q3 2018
+              p Launch ZXB crowdsale
+          .timeline-item.is-warning
+            .timeline-marker.is-warning.is-image.is-32x32
+              img(src='')
+            .timeline-content
+              p.heading Q4 2018
+              p Develop ZXB rewarding and voting system
+          header.timeline-header
+            span.tag.is-primary 2019
+          .timeline-item.is-danger
+            .timeline-marker.is-danger.is-icon
+              i.fa.fa-flag
+            .timeline-content
+              p.heading Q1 2019
+              p Build the genesis brewpub
+              p Deploy Beercoin blockchain
+          .timeline-item.is-danger
+            .timeline-marker.is-danger.is-icon
+              i.fa.fa-flag
+            .timeline-content
+              p.heading Q2 2019
+              p Inaugurate the genesis brewpub
+          .timeline-item.is-danger
+            .timeline-marker.is-danger.is-icon
+              i.fa.fa-flag
+            .timeline-content
+              p.heading Q3 2019
+              p Community building and token circulation
+          .timeline-item.is-danger
+            .timeline-marker.is-danger.is-icon
+              i.fa.fa-flag
+            .timeline-content
+              p.heading Q4 2019
+              p The 1st product rewarding
+          header.timeline-header
+            span.tag.is-medium.is-primary Continue
+
+    section.hero.technology
+      .hero-body
+        .container
+          nav.columns
+            //- a.column.has-text-centered(href='https://ethereum.org', target='_blank')
+            //-   span.image.is-96x96
+            //-     span.icon.is-large(style='margin-right: -15px;')
+            //-       i.fas.fa-lg.fa-mobile-alt
+            //-     span.icon.is-large
+            //-       i.fas.fa-2x.fa-tablet-alt
+            //-     span.icon.is-large(style='margin-right: 10px;')
+            //-       i.fas.fa-3x.fa-desktop
+            //-   p.title.is-4(style='margin-top: 0.5em;')
+            //-     strong 100% Responsive
+            //-   p.subtitle
+            //-     | Designed for
+            //-     strong mobile
+            //-     |  first
+            a.column.has-text-centered(href='#')
+              figure.image.is-96x96
+                img(src='https://ethereum.org/images/logos/ETHEREUM-ICON_Black_small.png')
+              p.title.is-4(style='margin-top: 0.5em;')
+                strong ethereum
+            a.column.has-text-centered(href='#')
+              figure.image.is-96x96
+                img(src='https://solidity.readthedocs.io/en/v0.4.23/_images/logo.svg')
+              p.title.is-4(style='margin-top: 0.5em;')
+                strong Solidity
+            a.column.has-text-centered(href='#')
+              figure.image.is-96x96
+                img(src='https://metamask.io/img/metamask.png')
+              p.title.is-4(style='margin-top: 0.5em;')
+                strong MetaMask
+            //- a.column.has-text-centered(href='#')
+            //-   span.image.is-96x96
+            //-     img(src='https://vuejs.org/images/logo.png')
+            //-   p.title.is-4(style='margin-top: 0.5em;')
+            //-     strong Free
+            //-   p.subtitle
+            //-     | Open source on
+            //-     strong GitHub
+            a.column.has-text-centered(href='#')
+              figure.image.is-96x96
+                img(src='https://vuejs.org/images/logo.png')
+              p.title.is-4(style='margin-top: 0.5em;')
+                strong Vue.js
+            a.column.has-text-centered(href='#')
+              figure.image.is-96x96
+                img(src='https://png.icons8.com/color/1600/ios-logo.png')
+              p.title.is-4(style='margin-top: 0.5em;')
+                strong iOS
+            a.column.has-text-centered(href='#')
+              figure.image.is-96x96
+                img(src='https://image.flaticon.com/icons/svg/38/38002.svg')
+              p.title.is-4(style='margin-top: 0.5em;')
+                strong Android
+
+    section.section
+      .container
+        .columns.is-multiline
+          .card.column.is-4
+            .card-image
+              figure.image.is-4by3
+                img(src='', alt='pic 1')
+            .card-content
+              .content
+                | Craft beer brewing equipment
+          .card.column.is-4
+            .card-image
+              figure.image.is-4by3
+                img(src='', alt='pic 2')
+            .card-content
+              .content
+                | A candidate venue (Berlin)
+          .card.column.is-4
+            .card-image
+              figure.image.is-4by3
+                img(src='', alt='pic 3')
+            .card-content
+              .content
+                | A candidate venue (Shanghai)
+          .card.column.is-4
+            .card-image
+              figure.image.is-4by3
+                img(src='', alt='pic 4')
+            .card-content
+              .content
+                | Teamwork
+
+    include footer

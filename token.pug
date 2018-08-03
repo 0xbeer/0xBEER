@@ -1,0 +1,133 @@
+extends layout
+block content
+  body
+    include navigation
+
+    section.section
+      .container
+
+        .content.has-text-centered
+          p#ico-status
+          p#start_or_end
+          span#days.is-size-2
+
+        .columns
+          .column.is-two-thirds.is-offset-2
+
+            .message.is-info
+              .message-header
+                | To all participants
+              .message-body
+                p
+                  | The public sale is between 
+                  strong#begin-date
+                  | &nbsp;and 
+                  strong#end-date
+                  | .
+                br
+                p
+                  | The total supply is 
+                  strong
+                    | 200,000,000 ZXB
+                  | . The number of tokens sold is 
+                  strong#token-sold
+                  strong
+                    | &nbsp;ZXB
+                  | .
+
+        .columns
+          .column.is-two-thirds.is-offset-2
+
+            .box
+              .columns.is-vcentered
+                .column
+
+                  .content
+                    .button.is-link.is-outlined
+                      | Current Rate:&nbsp;
+                      strong#current-rate
+                      | &nbsp;ZXB/ETH
+
+                .column
+
+                  .content
+                    p
+                      | Standard Rate: 
+                      strong
+                        | 5,000
+                      | &nbsp;ZXB/ETH
+                    p
+                      | Bonus: 
+                      strong#bonus-value
+                      | &nbsp;ZXB/ETH
+
+            .notification.is-info
+              | Currently, our crowdsale is achieved by 
+              strong#achieved
+              | . The earlier you participate, the more bonuses you get.
+            .box
+              progress#sale-progress.progress.is-link(value='60', max='100') 60%
+    section.section
+      .container
+        .columns
+          .column.is-two-thirds.is-offset-2
+            h3.title.is-4.is-spaced.bd-anchor-title
+              | HOW TO PARTICIPATE IN THE CROWDSALE OF THE PROJECT?
+            .content
+              p
+                | Please send ether from your wallet directly to our smart contract 
+                | address below.
+
+            .columns.is-vcentered
+              .column
+                h6
+                  strong Contract Address:
+                p(style='overflow-wrap: break-word;')
+                  | 0x2E8722D35C29462aB4C8fF0A0369B8eFf901bb15
+              .column
+                figure.image.is-128x128(style='margin: 0 auto;')
+                  img.lazyload(src='http://7xkh57.com1.z0.glb.clouddn.com/ZXB.png')
+
+            hr
+            .content
+              p
+                | 1. Please double check the above address. It must be the same as 
+                a(href='https://etherscan.io/address/0x2E8722D35C29462aB4C8fF0A0369B8eFf901bb15', target='_blank')
+                  strong the 0xBEER smart contract
+                | . Otherwise, either of the two websites might have been compromised.
+              p
+                | 2. Do NOT withdraw ether from any exchange directly to 
+                | our token sale address. If you do so, you will lose your token. 
+                | There is nothing we can do for you.
+              p
+                | 3. The minimum payment that our smart contract accepts is 0.01 ether.
+              p
+                | 4. Token will be issued and transfered to the account of the participant after purchasing. 
+                | There is no lockdown period.
+              p
+                | 5. Do not make any token transfer to accounts over which you have no control.
+              p
+                | 6. Please confirm that you are not US or Chinese citizen/resident.
+
+    section.hero.is-primary
+      .hero-body
+        .container
+          .columns.is-vcentered
+            .column.is-one-third.is-left
+              p.title
+                | Purchase confirmation
+              p.subtitle Check your token balance
+            .column
+              form(action='https://mail.xyz.com/subscribe', method='POST', accept-charset='utf-8')
+                .field.is-grouped
+                  .control.has-icons-left.is-expanded
+                    input#recipient-address.input.is-flat.required.email(type='email', value='', name='email', placeholder='0xAF6285CaEdc218e26276391Eacc98a4fC8422356', required='')
+                    span.icon.is-small.is-left
+                      i.fab.fa-ethereum
+                  .control
+                    .is-hidden
+                      input#hp(type='text', name='hp')
+                    input(type='hidden', name='list', value='So5UY3O9gHJkq892bn763Tyf4A')
+                    input#mc-embedded-subscribe.button.is-white.is-outlined(type='submit', value='Check', name='submit', onclick='App.checkZxbAmount();')
+
+    include footer

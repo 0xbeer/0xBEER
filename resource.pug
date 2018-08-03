@@ -1,0 +1,58 @@
+extends layout
+block content
+  body
+    include navigation
+    section.section
+      .container
+
+        .content.has-text-centered
+          h3 Getting Started
+          p.is-size-6 You'll find detailed documentation about our vision, project plan and current team below. The journey starts here.
+
+        .columns
+          .column
+            .card
+              .card-content
+                .media
+                  .media-left
+                    figure.image.is-48x48
+                      img(src='')
+                  .media-content
+                    p.title.is-4 One-pager
+                .content
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  | Phasellus nec iaculis mauris.
+
+                a.button.is-info.is-outlined(href='one-pager.pdf', target='_blank')
+                  | Download
+
+          .column
+            .card
+              .card-content
+                .media
+                  .media-left
+                    figure.image.is-48x48
+                      img(src='')
+                  .media-content
+                    p.title.is-4 White Paper
+                .content
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  | Phasellus nec iaculis mauris.
+
+                a.button.is-outlined Download
+          .column
+            .card
+              .card-content
+                .media
+                  .media-left
+                    figure.image.is-48x48
+                      img(src='')
+                  .media-content
+                    p.title.is-4 Smart Contract
+                .content
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  | Phasellus nec iaculis mauris.
+
+                a.button.is-outlined Download
+
+    include footer
